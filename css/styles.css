@@ -70,6 +70,7 @@ wrapper {
 	width:50%;
 }
 input[type="text"], input[type="password"], input[type="email"] {
+	position:relative;
 	display:block;
 	border-bottom: 1px solid #f2f2f2;
 	font-family: Work Sans;
@@ -111,7 +112,7 @@ input[type="email"]::-moz-placeholder {
 	color:#111111;
 
  }
-.clearfix:after {
+.clearfix::after {
   content: " ";
   clear: both;
   display: table;
@@ -178,3 +179,25 @@ label {
 	width:154px;
 	height:32px;
 }
+
+
+
+
+
+.form_email {
+	position: relative;
+}
+.form_email input::after{
+	position: absolute;
+	top:0;
+	z-index:1;
+	right:-18px;
+	content:"";
+	width:100px;
+	height:200px;
+	background-color: red;
+	border-bottom: 1px solid #5a61ed;
+	border-right: 1px solid #5a61ed;
+	transform:rotate(45deg);
+}
+
