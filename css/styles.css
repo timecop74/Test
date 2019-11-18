@@ -68,9 +68,22 @@ wrapper {
 	float:left;
 	width:50%;
 }
-input[type="text"], input[type="email"] {
+input[type="text"],input[type="password"], input[type="email"] {
 	display:block;
+	border-bottom: 1px solid #f2f2f2;
+	font-family: Work Sans;
+	font-size: 14px;
+	line-height: 16px;
+	color:#111111;
 }
+ select {
+	border-bottom: 1px solid #f2f2f2;
+	font-family: Work Sans;
+	font-size: 14px;
+	line-height: 16px;
+	color:#111111;
+
+ }
 .clearfix:after {
   content: " ";
   clear: both;
@@ -91,4 +104,27 @@ label {
 }
 #form_nation {
 	display:block;
+}
+.form_gender-label {
+	display :block;
+}
+.form_name, .form_nation, .form_date, .form_last-name, .form_email {
+	margin-bottom: 23px;
+}
+.form_gender {
+	margin-bottom: 25px;
+	vertical-align: -3px;
+}
+.form_gender strong{
+	font-family: Work Sana;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;	
+}
+#form_gender, #form_gender-woman {
+	margin-right: 6px;
+}
+.form_gender-male{
+	margin-right: 19px;
 }
