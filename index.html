@@ -8,43 +8,63 @@
 <body>
 	<wrapper>
 		<div class="wrapper_signup">
+			<div class="wrapper_signup-div-h1">
 				<h1 class="wrapper_signup-h1">Sign up</h1>
+			</div>
 		</div>
 		<div class="wrapper_main-form">
 			<h2>New user</h2>
 			<p>Use the form below to create your account</p>
 			<form>
-				<div class="wrapper_form-left">
-					<label for="form_first-name">First Name</label>
-					<input type="text" id="form_first-name">
-					<label for="form_nation">Nationality</label>
-					<select id="form_nation">
-						<option>American</option>
-					</select>
-					<label for="form_date-of-birth"></label>
-					<select id="form_date-of-birth-day">
-						<option>21</option>
-					</select>
-					<select id="form_date-of-birth-month">
-						<option>December</option>
-					</select>
-					<select id="form_date-of-birth-year">
-						<option>1995</option>
-					</select>
-					<label for="form_pass">Password</label>
-					<input type="password" id="form_pass">
-				</div>
-				<div class="wrapper_form-right">
-					<label for="form_last-name">Last Name</label>
-					<input type="text" id="form_last-name">
-					<label for="form_email">E-mail</label>
-					<input type="email" id="form_email" placeholder="alice.miller@yahoo.com">
-					<label>Gender</label>
-					<input type="radio" value="man" name="form_gender" id="form_gender"><label for="form_gender">Male</label>
-					<input type="radio" value="woman" checked name="form_gender" id="form_gender-woman"><label for="form_gender-woman">Female</label>
-					<label for="form_pass-confirm">Confirm Password</label>
-					<input type="password" id="form_pass-confirm">
-				</div>
+				<div class="wrapper_main-form-panel clearfix">
+					<div class="wrapper_form-left">
+						<div class="form_name">
+							<label for="form_first-name">First Name</label>
+							<input type="text" id="form_first-name" value="Alice">
+						</div>
+						<div class="form_nation string_next">
+							<label for="form_nation" class="string_next">Nationality</label>
+							<select id="form_nation">
+								<option>American</option>
+							</select>
+						</div>
+						<div class="form_date string_next">
+							<label for="form_date-of-birth">Date of Birth</label>
+							<div class="wrapper_form-date">
+								<select id="form_date-of-birth-day">
+									<option>21</option>
+								</select>
+								<select id="form_date-of-birth-month">
+									<option>December</option>
+								</select>
+								<select id="form_date-of-birth-year">
+									<option>1995</option>
+								</select>
+							</div>
+						</div>
+						<label for="form_pass">Password</label>
+						<input type="password" id="form_pass">
+					</div>
+					<div class="wrapper_form-right">
+						<div class="form_last-name">
+							<label for="form_last-name">Last Name</label>
+							<input type="text" id="form_last-name" value="Miller">
+						</div>
+						<div class="form_email">
+							<label for="form_email">E-mail</label>
+							<input type="email" id="form_email" placeholder="alice.miller@yahoo.com">
+						</div>
+						<div class="form_gender">
+							<label>Gender</label>
+							<input type="radio" value="man" name="form_gender" id="form_gender"><label for="form_gender">Male</label>
+							<input type="radio" value="woman" checked name="form_gender" id="form_gender-woman"><label for="form_gender-woman">Female</label>
+						</div>
+						<div class="form_confirm-pass">
+							<label for="form_pass-confirm">Confirm Password</label>
+							<input type="password" id="form_pass-confirm">
+						</div>
+					</div>
+				</div>	
 				<div class="wrapper_foot">
 					<p>Have an account?<a href="#">Login</a></p>
 					<button type="submit" >Complete Signup</button>
