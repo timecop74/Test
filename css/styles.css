@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: bottom;
+}
+
+wrapper {
+	display:flex;
+	flex-direction: row;
+
+}
+.wrapper_signup {
+	position:relative;
+	float:left;
+	color:#ffffff;
+	background-color: #5a61ed;
+	width:137px;
+	height: 480px;
+}
+.wrapper_signup-h1 {
+		position:absolute;
+		bottom: 100px;
+		width: 200px;
+		transform:rotate(-90deg);
+		font-family: PT Sans;
+		font-size: 49px;
+		line-height: 63px;
+		letter-spacing: 0.5px
+	}
+
+.wrapper_main-form {
+	float:right;
+}
