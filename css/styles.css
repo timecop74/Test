@@ -7,6 +7,7 @@
     vertical-align: bottom;
 }
 body {
+	position:relative;
     background-color: #f4f5fc;
 }
 
@@ -156,10 +157,16 @@ label {
 	margin-right: 19px;
 }
 .wrapper_foot {
-	vertical-align: bottom;
+	position:absolute;
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	bottom:32px;
+	vertical-align: middle;
+	width:451px;
+
 }
 #form_submit {
-	display: block;
 	float:right;
 	background-color: #5a61ed;
 	color:#ffffff;
