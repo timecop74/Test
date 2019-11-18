@@ -68,14 +68,40 @@ wrapper {
 	float:left;
 	width:50%;
 }
-input[type="text"],input[type="password"], input[type="email"] {
+input[type="text"], input[type="password"], input[type="email"] {
 	display:block;
 	border-bottom: 1px solid #f2f2f2;
 	font-family: Work Sans;
 	font-size: 14px;
 	line-height: 16px;
 	color:#111111;
+	width:49%;
 }
+input[type="text"]::-webkit-input-placeholder {
+    color: #111111;
+} 
+input[type="text"]::-moz-placeholder {
+   color: #111111;
+}
+input[type="email"]::-webkit-input-placeholder {
+    color: #111111;
+} 
+input[type="email"]::-moz-placeholder {
+   color: #111111;
+}
+#form_first-name, #form_nation, #form_pass {
+	width:95%;
+}
+#form_date-of-birth-day {
+	width:20%;
+}
+#form_date-of-birth-month {
+	width:50%;
+}
+#form_date-of-birth-year {
+	width:21%;
+}
+
  select {
 	border-bottom: 1px solid #f2f2f2;
 	font-family: Work Sans;
@@ -112,19 +138,31 @@ label {
 	margin-bottom: 23px;
 }
 .form_gender {
+	display: inline-block;
 	margin-bottom: 25px;
-	vertical-align: -3px;
 }
-.form_gender strong{
+.form_gender span{
 	font-family: Work Sana;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 16px;	
+	vertical-align: bottom;
 }
 #form_gender, #form_gender-woman {
 	margin-right: 6px;
 }
 .form_gender-male{
 	margin-right: 19px;
+}
+.wrapper_foot {
+	vertical-align: bottom;
+}
+#form_submit {
+	display: block;
+	float:right;
+	background-color: #5a61ed;
+	color:#ffffff;
+	width:154px;
+	height:32px;
 }
