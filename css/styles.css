@@ -33,4 +33,21 @@ wrapper {
 
 .wrapper_main-form {
 	float:right;
+	padding: 38px 20px;
+}
+.wrapper_main-form h2 {
+	font-family: Work Sans;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 26px;
+	letter-spacing: -0.46px;
+	color:#111111;
+}
+
+.wrapper_main-form p{
+	font-family: Work Sans;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 16px;
+	color:#111111;
 }
