@@ -6,10 +6,14 @@
     font-size: 100%;
     vertical-align: bottom;
 }
+body {
+    background-color: #f4f5fc;
+}
 
 wrapper {
 	display:flex;
 	flex-direction: row;
+	margin:60px 67px 60px 60px;
 
 }
 .wrapper_signup {
@@ -20,9 +24,12 @@ wrapper {
 	width:137px;
 	height: 480px;
 }
-.wrapper_signup-h1 {
+.wrapper_signup-div-h1{
 		position:absolute;
 		bottom: 100px;
+		right:-68px;
+}
+.wrapper_signup-h1 {
 		width: 200px;
 		transform:rotate(-90deg);
 		font-family: PT Sans;
@@ -34,6 +41,9 @@ wrapper {
 .wrapper_main-form {
 	float:right;
 	padding: 38px 20px;
+	width:527px;
+    height:480px;
+	background-color: #ffffff;
 }
 .wrapper_main-form h2 {
 	font-family: Work Sans;
@@ -50,4 +60,35 @@ wrapper {
 	font-size: 14px;
 	line-height: 16px;
 	color:#111111;
+}
+.wrapper_main-form-panel{
+	margin:20px 0;
+}
+.wrapper_form-left{
+	float:left;
+	width:50%;
+}
+input[type="text"], input[type="email"] {
+	display:block;
+}
+.clearfix:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+label {
+	font-family: Work Sans;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 14px;
+	color:#7c7c7c;
+}
+.form_name {
+	width:100%;
+}
+.string_next:after {
+	display:block;
+}
+#form_nation {
+	display:block;
 }
