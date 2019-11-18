@@ -135,12 +135,11 @@ label {
 .form_gender-label {
 	display :block;
 }
-.form_name, .form_nation, .form_date, .form_last-name, .form_email {
+.form_name, .form_nation, .form_date, .form_last-name, .form_email, .form_gender {
 	margin-bottom: 23px;
 }
-.form_gender {
+ .form_gender{
 	display: inline-block;
-	margin-bottom: 25px;
 }
 .form_gender span{
 	font-family: Work Sana;
@@ -156,6 +155,12 @@ label {
 .form_gender-male{
 	margin-right: 19px;
 }
+.form_gender-radio{
+	display: flex;
+	align-items: flex-start;
+	padding-top:7px;
+}
+
 .wrapper_foot {
 	position:absolute;
 	display: flex;
